@@ -1,0 +1,29 @@
+{
+  "name": "alfaod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@zeit/next-stylus": "^1.0.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "scheduler": "^0.12.0",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoFredes/alfaod.git"
+  },
+  "author": "Fredes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicardoFredes/alfaod/issues"
+  },
+  "homepage": "https://github.com/RicardoFredes/alfaod#readme"
+}
