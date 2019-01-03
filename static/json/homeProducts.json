@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Alfajores",
+    "description": "Alfajores recheados com duas camadas de doce de leite e cobertura de chocolate meio amargo ou branco.",
+    "image": "https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2019/01/home-alfajores-201901.png",
+    "button": {
+      "children": "Ver na loja",
+      "href": "/loja"
+    }
+  },
+  {
+    "name": "Bocaditos",
+    "description": "Mini alfajores recheados com muuuuito doce de leite e cobertura de chocolate meio amargo ou branco.",
+    "image": "https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2019/01/home-bocaditos-201901.png",
+    "button": {
+      "children": "Ver na loja",
+      "href": "/loja"
+    }
+  }
+]

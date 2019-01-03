@@ -1,0 +1,59 @@
+{
+  "contact": [
+    {
+      "text": "contato@alfajoresodara.com.br",
+      "link": "mailto:contato@alfajoresodara.com.br"
+    },
+    {
+      "text": "+55 51 4061-2299"
+    },
+    {
+      "text": "+55 51 99257-7679",
+      "link": "http://api.whatsapp.com/send?1=pt_BR&phone=5551992577679"
+    }
+  ],
+  "information": [
+    "Rua Visconde do Rio Branco, 684 - Floresta",
+    "Porto Alegre - RS, CEP 90220-231",
+    "CNPJ: 21.487.894/0001-66"
+  ],
+  "links": [
+    {
+      "text": "Entrega",
+      "link": "/entrega"
+    },
+    {
+      "text": "Pagamento",
+      "link": ""
+    },
+    {
+      "text": "Segurança",
+      "link": ""
+    },
+    {
+      "text": "Quero Revender",
+      "link": ""
+    },
+    {
+      "text": "Devoluções e Trocas",
+      "link": ""
+    }
+  ],
+  "social": [
+    {
+      "title": "Facebook",
+      "link": "https://www.facebook.com/alfajoresodara/",
+      "mdi": "mdi mdi-facebook mdi-18px"
+    },
+    {
+      "title": "Instagram",
+      "link": "https://www.instagram.com/alfajoresodara/",
+      "mdi": "mdi mdi-instagram mdi-18px"
+    },
+    {
+      "title": "Whatsapp",
+      "link": "http://api.whatsapp.com/send?1=pt_BR&phone=5551992577679",
+      "mdi": "mdi mdi-whatsapp mdi-18px"
+    }
+  ]
+}

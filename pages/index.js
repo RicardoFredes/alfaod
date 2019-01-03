@@ -1,19 +1,26 @@
-import LazyLoading from '../components/LazyLoading'
 import MainView from '../components/MainView'
 import Head from 'next/head'
-import Hx from '../components/Hx'
-import Slider from '../components/Slider'
+import HomeInstagram from '../components/Home/HomeInstagram'
+import HomeProducts from '../components/Home/HomeProducts'
+import HomeSlider from '../components/Home/HomeSlider'
+import HomeTestimonials from '../components/Home/HomeTestimonials'
+import LazyLoading from '../components/LazyLoading'
+
+import homeProducts from '../static/json/homeProducts'
 
 export default () => (
   <MainView>
-    <Slider />
-    <div className="Container P2x">
-      <LazyLoading className="TextCenter">
-        <img
-        title="Boas energias que cabem na palma da mão"
-        src="https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2018/08/odaraText_boasenergias.png" />
-      </LazyLoading>
-    </div>
+    <HomeSlider />
+    <HomeProducts />
+    <hr />
+    <HomeTestimonials />
+    <LazyLoading>
+      <>
+        <hr />
+        <HomeInstagram />
+      </>
+    </LazyLoading>
   </MainView>
 )
 
+const FacebookReview = () => <div />

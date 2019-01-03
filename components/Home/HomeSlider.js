@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
-import slides from '../static/json/slides'
+import slides from '../../static/json/slides'
 import styled from 'styled-components'
 
 export default class extends Component {
@@ -29,7 +29,7 @@ export default class extends Component {
   }
 
   render = () => (
-    <section className="SliderSection">
+    <section className="SliderSection BellowTextCenter">
       <div className="Slider Flex">
         {slides.map(({ image, title, description, button }, key) =>
           <Slide image={image} position={this.state.position} key={key} className="Slide Flex AICenter">
@@ -46,7 +46,7 @@ export default class extends Component {
         )}
       </div>
       <div className="Bullets Flex FlexCenter">
-        {slides.map((props, key) => 
+        {slides.map((props, key) =>
           <div
             key={key}
             className={classNames({ Active: key === this.state.position }, 'Bullet')}
