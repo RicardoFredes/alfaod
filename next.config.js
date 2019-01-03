@@ -1,2 +1,8 @@
 const withStylus = require('@zeit/next-stylus')
-module.exports = withStylus()
+const rupture = require('rupture')
+
+module.exports = withStylus({
+  stylusLoaderOptions: {
+    use: [rupture()]
+  }
+})

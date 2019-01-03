@@ -1,5 +1,7 @@
 export default () => (
-  <footer>
-    Rodapé
+  <footer className="Fotter">
+    <div className="Container P2x">
+    	Rodapé
+    </div>
   </footer>
 )
