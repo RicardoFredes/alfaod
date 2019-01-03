@@ -18,13 +18,62 @@ nav.Navigation
 .NavigationBrand
   padding-top 52px
 .NavigationMenu
-  mh($navHeight)
-  a
-    color white
-    display inline-block
-    transitionAll()
-    &:hover,
-    &.Active
-      color $color_secondary
+  +above('md')
+    mh($navHeight)
+    a
+      color white
+      display inline-block
+      transitionAll()
+      &:hover,
+      &.Active
+        color $color_secondary
+.NavigationMenuWrapper
+  +below('md')
+    text-align center
+    display flex
+    align-items center
+    bg(rgba(0,0,0,.95))
+    position fixed
+    w(100vw)
+    h(100vh)
+    top 0
+    left 0
+    &.BellowHide
+      display none
+    .NavigationMenu
+      a
+        font-size 14px
+        color white
+        padding 8px
+        &:hover,
+        &.Active
+          color $color_secondary
+
 body
-  margin-top $navHeight      
+  margin-top $navHeight
+
+.MenuSeparator
+  bg(rgba(255,255,255,.3))
+  +above('md')
+    w(1px)
+    margin 0 16px
+    h(32px)
+  +below('md')
+    h(1px)
+    margin 12px auto
+    w(250px)
+
+.MenuHamburger
+  position absolute
+  top 0
+  right 0
+  h($navHeight)
+  w($navHeight)
+  text-align center
+  cursor pointer
+  i
+    line-height $navHeight
+    font-size 24px
+    transitionAll()
+  &:hover
+    color $color_secondary

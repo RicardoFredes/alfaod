@@ -26,7 +26,6 @@ export default class extends Component {
     return fetch(this.state.nextUri)
       .then(res => res.json())
       .then(({ data, pagination }) => {
-        console.log(data)
         const dataParsed = dataParser(data)
         return this.setState({
           data: this.state.data.concat(dataParsed),

@@ -17,7 +17,11 @@ export default () => (
 
 const FooterInformation = () => (
   <div>
-    <img src="/static/img/brandVersionNegative.png" />
+    <Link href="/">
+      <a>
+        <img src="/static/img/brandVersionNegative.png" />
+      </a>
+    </Link>
     {information.map((text, key) =>
       <p className="SingleSpace FS12" key={key}>{text}</p>)}
   </div>
@@ -31,7 +35,9 @@ const FooterLinks = () => (
 
 const FooterContact = () => (
   <FooterMenuColumn title="Fale com a gente">
-    {contact.map((props, key) => <LinkItem {...props} key={key} />)}
+    {contact.map((props, key) => (
+      <LinkItem {...props} target="_blank" key={key} />
+    ))}
     <div className="MT12">
       {social.map((props, key) => <LinkIcon {...props} key={key} />)}
     </div>
@@ -40,7 +46,7 @@ const FooterContact = () => (
 
 const FooterPayment = () => (
   <FooterMenuColumn title="Formas de Pagamento">
-    <div className="MAuto" style={{ maxWidth: 200 }}>
+    <div className="MAuto" style={{ maxWidth: 180 }}>
       <img src="https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2018/11/cards-min.png" />
       <Seal>
          <img src="https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2018/11/ssl-seguro.png" />
@@ -58,13 +64,16 @@ const FooterMenuColumn = ({ title, children }) => (
   </div>
 )
 
-const LinkItem = ({ link, text, target }) => (
-  <Link href={link}>
-    <a className="Block PV4 FS1x DecorationNone" target={target}>
-      {text}
-    </a>
-  </Link>
-)
+const LinkItem = ({ link, text, target }) => {
+  const Component = link ? Link : 'span'
+  return (
+    <Component href={link}>
+      <a className="Block PV4 FS1x DecorationNone" target={target}>
+        {text}
+      </a>
+    </Component>
+  )
+}
 
 const LinkIcon = ({ link, title, mdi }) => (
   <Link href={link}>
@@ -79,6 +88,6 @@ const Seal = styled.div`
   border-radius: 7px;
   padding: 0 3px;
   display: inline-block;
-  width: 107px;
+  max-width: 107px;
   margin-top: 32px;
 `

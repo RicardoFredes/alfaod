@@ -32,9 +32,15 @@ export default class extends Component {
     <section className="SliderSection BellowTextCenter">
       <div className="Slider Flex">
         {slides.map(({ image, title, description, button }, key) =>
-          <Slide image={image} position={this.state.position} key={key} className="Slide Flex AICenter">
+          <Slide
+            image={image}
+            position={this.state.position}
+            key={key}
+            className="Slide Flex AICenter">
             <div className="SlideContent Container P3x">
-              {title.map((part, key) => <div className="FS9x Strong SlideTitle" key={key}>{part}</div>)}
+              {title.map((part, key) => (
+                <div className="FS9x Strong SlideTitle" key={key}>{part}</div>
+              ))}
               <p className="FS6x MV24">{description}</p>
               {button && (
                 <Link href={button.href}>
@@ -49,7 +55,9 @@ export default class extends Component {
         {slides.map((props, key) =>
           <div
             key={key}
-            className={classNames({ Active: key === this.state.position }, 'Bullet')}
+            className={classNames({
+              Active: key === this.state.position
+            }, 'Bullet')}
             onClick={() => this.reseInterval(key)} />
         )}
       </div>
@@ -62,6 +70,7 @@ const Slide = styled.div`
   background-image: url(${({ image }) => image || ''});
   transform: translateX(${({ position }) => getTranslateByPosition(position)});
   transition: transform ease .3s;
+
 `
 
 const getTranslateByPosition = position => `-${position * 100}vw`

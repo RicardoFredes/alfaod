@@ -1,14 +1,22 @@
 [
   {
-    "name": "Início",
-    "pathName": ""
+    "text": "Início",
+    "link": "/"
   },
   {
-    "name": "Manifesto",
-    "pathName": "manifesto"
+    "text": "Manifesto",
+    "link": "/manifesto"
   },
   {
-    "name": "Produto",
-    "pathName": "produto"
+    "text": "Produto",
+    "link": "/produto"
+  },
+  {
+    "text": "Seja Odara",
+    "link": "/sejaodara"
+  },
+  {
+    "text": "FAQ",
+    "link": "/faq"
   }
 ]
