@@ -47,16 +47,16 @@ const Menu = ({ pathName }) => (
       <MenuItem {...props} key={key} active={pathName === props.link} />
     ))}
     <div className="MenuSeparator"/>
-    <MenuItem text="Loja" link="/loja" icon="shopping" />
-    <MenuItem link="/carrinho" icon="cart" />
-    <MenuItem link="/entrar" icon="account" />
+    <MenuItem text="Loja" link="/loja" icon="shopping" active={pathName === '/loja'} />
+    <MenuItem link="/carrinho" icon="cart" active={pathName === '/carrinho'} />
+    <MenuItem link="/entrar" icon="account" active={pathName === '/entrar'} />
   </div>
 )
 
 const MenuItem = ({ link, text, icon, active }) => (
   <Link href={link}>
     <a className={classNames({
-        Active: active 
+        Active: active
       }, 'FS2x Block PH8 DecorationNone')}>
       {icon && <i className={`mdi mdi-${icon} mdi-18px MR4`} />}
       {text}

@@ -1,5 +1,4 @@
 import MainView from '../components/MainView'
-import Head from 'next/head'
 import HomeInstagram from '../components/Home/HomeInstagram'
 import HomeProducts from '../components/Home/HomeProducts'
 import HomeSlider from '../components/Home/HomeSlider'

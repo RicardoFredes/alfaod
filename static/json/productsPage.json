@@ -1,0 +1,27 @@
+{
+  "alfajores": [
+    {
+      "image": "https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2018/08/pageProduct_odara_alfa_preto.png",
+      "title": "Chocolate Preto",
+      "text": "Felicidade na palma da mão. Alfa recheado com duas camadas de muuuuito doce de leite e cobertura de chocolate meio amargo.",
+      "weight": "65g",
+      "box": "6 e 12 unidades"
+    },
+    {
+      "image": "https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2018/08/pageProduct_odara_alfa_branco.png",
+      "title": "Chocolate Branco",
+      "text": "Como morder o céu! Alfa recheado com duas camadonas de doce de leite e cobertura de chocolate branco.",
+      "weight": "65g",
+      "box": "6 e 12 unidades"
+    }
+  ],
+  "bocaditos": [
+    {
+      "image": "https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2018/08/pageProduct_odara_alfa_bocadito.png",
+      "title": "Chocolate Preto",
+      "text": "Mini alfa recheado com doce de leite e cobertura de chocolate meio amargo. Pequenas doses de felicidade!",
+      "weight": "25g",
+      "box": "18 unidades"
+    }
+  ]
+}
