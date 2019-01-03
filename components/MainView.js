@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import "../stylus/index.styl"
-import Header from '../Components/Header'
-import Footer from '../Components/Footer'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default ({ children, meta = {} }) => (
 	<>

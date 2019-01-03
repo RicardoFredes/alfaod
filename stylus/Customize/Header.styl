@@ -1,3 +1,30 @@
-nav
+nav.Navigation
+  zindex(20)
+  position fixed
   color white
-  height 64px
+  h($navHeight)
+  w(100%)
+  top 0
+  left 0
+  &:after
+    margin-top -1px
+    content ''
+    display block
+    w(100%)
+    h(10px)
+    background url('/static/img/bgMenu.svg') repeat-x
+.NavigationContainer
+  height $navHeight
+.NavigationBrand
+  padding-top 52px
+.NavigationMenu
+  mh($navHeight)
+  a
+    color white
+    display inline-block
+    transitionAll()
+    &:hover,
+    &.Active
+      color $color_secondary
+body
+  margin-top $navHeight      

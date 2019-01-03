@@ -1,0 +1,29 @@
+[
+  {
+    "image": "https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2018/08/slideSm1.jpg",
+    "title": ["Recheado com paz", "e tranquilidade"],
+    "description": "Boas energias, nosso principal ingrediente",
+    "button": {
+      "name": "Manifesto",
+      "href": "/manifesto"
+    }
+  },
+  {
+    "image": "https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2018/08/slideSm2.jpg",
+    "title": ["Para a vida", "ficar Odara"],
+    "description": "Pequenas doses de felicidade",
+    "button": {
+      "name": "Comprar",
+      "href": "/loja"
+    }
+  },
+  {
+    "image": "https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2018/08/slideSm3.jpg",
+    "title": ["Mais amor, sorrisos e", "doce de leite no alfajor"],
+    "description": "Felicidade na palma da mão",
+    "button": {
+      "name": "Produtos",
+      "href": "/produtos"
+    }
+  }
+]

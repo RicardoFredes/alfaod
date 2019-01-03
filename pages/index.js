@@ -1,11 +1,19 @@
+import LazyLoading from '../components/LazyLoading'
+import MainView from '../components/MainView'
 import Head from 'next/head'
-import MainView from '../Components/MainView'
-import Hx from '../Components/Hx'
+import Hx from '../components/Hx'
+import Slider from '../components/Slider'
 
 export default () => (
   <MainView>
-  	<div className="Container P2x">
-    	<Hx x={1} size={8} strong>Alfajores Odara</Hx>
+    <Slider />
+    <div className="Container P2x">
+      <LazyLoading className="TextCenter">
+        <img
+        title="Boas energias que cabem na palma da mão"
+        src="https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2018/08/odaraText_boasenergias.png" />
+      </LazyLoading>
     </div>
   </MainView>
 )
+

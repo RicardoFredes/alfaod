@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Início",
+    "pathName": ""
+  },
+  {
+    "name": "Manifesto",
+    "pathName": "manifesto"
+  },
+  {
+    "name": "Produto",
+    "pathName": "produto"
+  }
+]
