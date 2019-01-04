@@ -1,6 +1,5 @@
 import { contact, information, links, social } from '../static/json/footer'
 import Link from 'next/link'
-import styled from 'styled-components'
 
 export default () => (
   <footer className="Fotter P2x BellowTextCenter">
@@ -23,7 +22,7 @@ const FooterInformation = () => (
       </a>
     </Link>
     {information.map((text, key) =>
-      <p className="SingleSpace FS12" key={key}>{text}</p>)}
+      <p className="FS12 MT0" key={key}>{text}</p>)}
   </div>
 )
 
@@ -48,9 +47,9 @@ const FooterPayment = () => (
   <FooterMenuColumn title="Formas de Pagamento">
     <div className="MAuto" style={{ maxWidth: 180 }}>
       <img src="https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2018/11/cards-min.png" />
-      <Seal>
+      <div className="Seal">
          <img src="https://www.alfajoresodara.com.br/wp-odara/wp-content/uploads/2018/11/ssl-seguro.png" />
-       </Seal>
+       </div>
     </div>
   </FooterMenuColumn>
 )
@@ -82,12 +81,3 @@ const LinkIcon = ({ link, title, mdi }) => (
     </a>
   </Link>
 )
-
-const Seal = styled.div`
-  background-color: white;
-  border-radius: 7px;
-  padding: 0 3px;
-  display: inline-block;
-  max-width: 107px;
-  margin-top: 32px;
-`
