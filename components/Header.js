@@ -2,7 +2,7 @@ import { Component } from 'react'
 import { withRouter } from 'next/router'
 import classNames from 'classnames'
 import Link from 'next/link'
-import navigationMenu from '../static/json/navigationMenu'
+import navigationMenu from '../data/navigationMenu'
 import styled from 'styled-components'
 
 class Header extends Component {

@@ -1,4 +1,4 @@
-import { contact, information, links, social } from '../static/json/footer'
+import { contact, information, links, social } from '../data/footer'
 import Link from 'next/link'
 
 export default () => (

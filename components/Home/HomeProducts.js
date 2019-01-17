@@ -1,7 +1,7 @@
 import Hx from '../Hx'
 import LazyLoading from '../LazyLoading'
 import Link from 'next/link'
-import homeProducts from '../../static/json/homeProducts'
+import homeProducts from '../../data/homeProducts'
 
 export default () => (
   <section className="Products">

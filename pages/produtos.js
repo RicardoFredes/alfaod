@@ -2,7 +2,7 @@ import Hx from '../components/Hx'
 import Link from 'next/link'
 import MainView from '../components/MainView'
 import LazyLoading from '../components/LazyLoading'
-import { alfajores, bocaditos } from '../static/json/productsPage'
+import { alfajores, bocaditos } from '../data/productsPage'
 
 export default () => (
   <MainView>

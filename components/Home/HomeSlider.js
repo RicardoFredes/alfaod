@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
-import slides from '../../static/json/slides'
+import slides from '../../data/slides'
 import styled from 'styled-components'
 
 export default class extends Component {

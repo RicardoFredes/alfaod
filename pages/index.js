@@ -5,7 +5,7 @@ import HomeSlider from '../components/Home/HomeSlider'
 import HomeTestimonials from '../components/Home/HomeTestimonials'
 import LazyLoading from '../components/LazyLoading'
 
-import homeProducts from '../static/json/homeProducts'
+import homeProducts from '../data/homeProducts'
 
 export default () => (
   <MainView>

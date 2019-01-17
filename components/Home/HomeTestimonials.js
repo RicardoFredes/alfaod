@@ -1,7 +1,7 @@
 import Hx from '../Hx'
 import LazyLoading from '../LazyLoading'
 import styled from 'styled-components'
-import testimonials from '../../static/json/testimonials'
+import testimonials from '../../data/testimonials'
 
 export default () => (
   <section className="P2x">
