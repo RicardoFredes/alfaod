@@ -1,5 +1,6 @@
 {
-  "name": "alfaod",
-  "version": 2,
-  "builds": [{ "src": "package.json", "use": "@now/next" }]
+	"name": "alfaod",
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next", "config": { "maxLambdaSize": "10mb" } }
+  ]
 }

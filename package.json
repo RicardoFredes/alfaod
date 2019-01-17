@@ -16,8 +16,9 @@
   "devDependencies": {},
   "scripts": {
     "dev": "next dev",
+    "start": "next start",
     "build": "next build",
-    "start": "NODE_ENV=production next start"
+    "now-build": "next build"
   },
   "repository": {
     "type": "git",
